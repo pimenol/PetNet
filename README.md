@@ -55,15 +55,3 @@ model.load_state_dict(torch.load("weights.pth", map_location=torch.device('cpu')
 
 # Predict
 output = model.predict(image_tensor)
-
-
-## Project Structure
-
-.
-├── model.py           # Model architecture with backbone & heads
-├── train.py           # Training loop
-├── predict.py         # Inference script
-├── dataset.py         # Custom dataset & transforms
-├── utils.py           # IoU, top-k accuracy, etc.
-├── weights.pth        # Trained weights
-└── README.md
